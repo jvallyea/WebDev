@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<title>Louis</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">The Build</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">Louis - A Dynamic Braille Reader</div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="Images/image1.jpg" alt="Sandwich" style="width:100%">
+      <h3>Static Assembly</h3>
+      <p>Two stepper motors allow individual rings to be separately turned, forming sentences.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Images/image2.jpg" alt="Steak" style="width:100%">
+      <h3>SolidWorks CAD</h3>
+      <p>Apart from the legos, stepper motors, and slip ring, Louis was designed on SolidWorks and then 3D printed..</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Images/image3.jpg" alt="Cherries" style="width:100%">
+      <h3>Braille Rings</h3>
+      <p>Octagonal braille rinigs with dot permutations were 3D printed and attached.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Images/image4.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Lego Support</h3>
+      <p>The assembly's support was made of legos (the most fun part to build!).</p>
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="Images/image5.jpg" alt="Popsicle" style="width:100%">
+      <h3>Fresh 3D Prints</h3>
+      <p>Sets of 12 braille rings were printed on a single bed.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Images/image6.jpg" alt="Salmon" style="width:100%">
+      <h3>Independent Assembly</h3>
+      <p>The braille assembly can be arm-mounted for portability and ease-of-use.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Images/image7.jpg" alt="Sandwich" style="width:100%">
+      <h3>More 3D Prints</h3>
+      <p>It was difficult to get the size and configuration of braille rings to be just right.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Images/image8.jpg" alt="Croissant" style="width:100%">
+      <h3>Raspberry PiCam</h3>
+      <p>The Raspberry Pi was the central processing unit for Louis, giving sight to the visually impaired.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">
+    <h3>About the Team</h3><br>
+    <img src="Images/squad.jpg" alt="Me" class="w3-image" style="max-width:100%; max-height: 333px">
+    <div class="w3-padding-32">
+      <h4><b>4 Engineering Undergraduates</b></h4>
+      <h6><i>We've stuck together through thick and thin - and we've come out smarter, wiser, and closer!</i></h6>
+      <p>Last semester, two of us took ECON 1130 (Mathematical Microeconomics), with Roberto Serrano. Despite being at 9 AM, Professor Serrano made ECON one hell-of-a-class, full of surprises and turns!</p>
+      <p>But what was perhaps our biggest surprise was when he walked into our 1st class, holding a cane in one hand, and the arm of a graduate student in the other. He was visually impaired, and one of the smartest people we had ever met. </p>
+      <p> Over the course of the semester, we got to know him better, and learned more about teh difficulties faced by the visually impaired - from things we did without a second thought like checking email and navigating a cafeteria, we quickly learned that technology to aid the visually impaired was limited. </p>
+      <p> Starting in the Fall of 2017, we began developing Louis. To open-source an increase the accessibility of the technology we were developing, we decided to 3D all of the components of the device (except the motors and slip ring. </p>
+      <p> We developed a 2-motor system, where one motor moved along a central axis, while the other rotated to allow the Braille to change, creating a dynamic device. </p>
+      <p> Braille pieces were printed on octagons, where each face had one of 8 permutations of the 3-dot system. Thus, as the octagon rotates, so too does the text being displayed. </p>
+      <p> A camera attached to a Raspberry pi fed images into Google's Vision API, along with Microsoft's Azure API to summarize the image with a caption under 5 words. This caption was then displayed on Louis' Braille face. </p>
+      <p> We are currently working to develop a dynamic interface, where Louis can be used to assist the visually impaired in checking social media and email as well. </p>
+      <p> To find out more, please visit http://www.github.com/jvallyea/Louis or contact me directly. </p> 
+    </div>
+  </div>
+  <hr>
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Please contact me at julian@vallyeason.com (703 651 6963) if you're interested in working with us, or would like to reach out.</p>
+    </div>
+
+    <div class="w3-third">
+      <h3>RELATED LINKS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <a href="https://devpost.com/software/louis-c519xw">
+        <li class="w3-padding-16">
+          <img src="Images/devpost.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Devpost</span><br>
+          <span>YHacks Submission of Louis</span>
+        </li>
+      </a>
+        <a href="https://youtu.be/OQZQwKHw0YY">
+        <li class="w3-padding-16">
+          <img src="Images/video.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">1st Alpha Test</span><br>
+          <span>Forward-Backward Stepper Motor Movement</span>
+        </li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>TECH USED</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">PiCam</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Raspberry Pi</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Brown University</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Python Programming</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">SolidWorks</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Braille</span>
+
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
