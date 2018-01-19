@@ -56,12 +56,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </header>
 
   <!-- First Photo Grid-->
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" id="one">
     <div class="w3-third w3-container w3-margin-bottom">
       <a href="CloudAgronomics/index.html"> <img src="Images/UAV_Cover.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"> </a>
       <div class="w3-container w3-white">
         <p><b>Cloud Agronomics - A Solar-Powered UAV</b></p>
-        <p>Together, we built a custom solar-powered drone, equipped with multispectral imaging technology and a 24-hour flight time..</p>
+        <p id="two">Together, we built a custom solar-powered drone, equipped with multispectral imaging technology and a 24-hour flight time..</p>
       </div>
     </div>
     <div class="w3-third w3-container w3-margin-bottom">
@@ -81,7 +81,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </div>
 
   <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
+  <div class="w3-row-padding" id="two">
     <div class="w3-third w3-container w3-margin-bottom">
       <a href="VoltWorks"> <img src="Images/Voltworks_Cover.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity"> </a>
       <div class="w3-container w3-white">
@@ -110,12 +110,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <div class="w3-bar">
       <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
       <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" onclick="goTwo()" class="w3-bar-item w3-button w3-hover-black">2</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
       <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
     </div>
   </div>
+
+<script>
+  function goTwo() {
+    var el1 = document.getElementById("one");
+    var el3 = document.createElement('div');
+    el3.id = "three";
+    el3.class = "w3-row-padding";
+    el3.innerHTML = '<div class="w3-third w3-container w3-margin-bottom"> <a href="VoltWorks"> <img src="Images/Voltworks_Cover.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity"> </a> <div class="w3-container w3-white"> <p><b>VoltWorks - A Soil-Based Microbial Fuel Cell</b></p> <p>Borne from a yearlong independent research project, VoltWorks seeks to apply microbial fuel cells to agricultural waste management.</p> </div> </div> <div class="w3-third w3-container w3-margin-bottom"> <a href="UMD"> <img src="Images/Crayfish_Cover.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity"> </a> <div class="w3-container w3-white"> <p><b>Neuroscience Research on Crayfish</b></p> <p>For over a year, I researched the role of sensory signals in crayfish dominance hierarchies at the University of Maryland (Herberholz Lab).</p> </div> </div> <div class="w3-third w3-container"> <a href="https://www.youtube.com/watch?v=GnasYgoSrk8"> <img src="Images/Quadcopter_Cover.JPG" alt="Norway" style="width:100%" class="w3-hover-opacity"> </a> <div class="w3-container w3-white"> <p><b>Quadcopter Obstacle Course</b></p> <p>For our engineering dynamics capstone project, we developed a dynamic MATLAB script to help a quadcopter navigate a series of obstacles.</p> </div> </div>';
+    el1.parentNode.replaceChild(el3, el1);
+    var el2 = document.getElementById("two");
+    el2.parentNode.removeChild(el2);
+  }
+</script>
 
   <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
     <h4><b>About Me</b></h4>
