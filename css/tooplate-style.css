@@ -47,7 +47,8 @@ p {
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
-	padding: 30% 0px 20% 0px;
+	padding: 20% 0px 20% 0px;
+	height: 100vh;
 }
 
 .first-section .text-content {
