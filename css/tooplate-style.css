@@ -9,7 +9,6 @@ http://www.tooplate.com/view/2091-ziggy
 /*============
 BASIC STYLE
 ============*/
-
 ul {
 	padding: 0;
 	margin: 0;
@@ -43,7 +42,7 @@ p {
 =======================*/
 
 .first-section {
-	background-image: url(../img/first-section-bg.png);
+	background-image: url(../img/first-section-bg.jpg);
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
@@ -52,7 +51,6 @@ p {
 }
 
 .first-section .text-content {
-	text-align: right;
 	color: #fff;
 }
 
