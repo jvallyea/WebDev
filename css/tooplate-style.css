@@ -36,18 +36,22 @@ p {
 	letter-spacing: 1px;
 }
 
+.fullspan {
+	background-image: url(../img/wallpaper.jpg);
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+}
+
 
 /* ======================
 ----- FIRST SECTION------
 =======================*/
 
 .first-section {
-	background-image: url(../img/wallpaper.jpg);
-	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
 	padding: 20% 0px 20% 0px;
-	height: 100vh;
 }
 
 .first-section .text-content {
